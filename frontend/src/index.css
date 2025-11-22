@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-white;
+  }
+}
+
+.calendar-grid {
+  @apply grid gap-0 border border-slate-200 dark:border-slate-700;
+}
+
+.calendar-time-slot {
+  @apply border-b border-r border-slate-200 dark:border-slate-700;
+}
+
+.calendar-event {
+  @apply absolute rounded px-2 py-1 text-white text-xs font-semibold overflow-hidden cursor-move;
+}
+
+.event-modal {
+  @apply fixed inset-0 z-50 flex items-center justify-center;
+}
+
+.event-modal-overlay {
+  @apply fixed inset-0 bg-black/50;
+}
